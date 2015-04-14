@@ -9,7 +9,8 @@ public class NetworkManager : MonoBehaviour {
 	private bool isRefreshingHostList = false;
 	private HostData[] hostList;
 */	
-	public GameObject playerPrefab;
+	// public GameObject playerPrefab;
+	public GameObject worldPrefab;
 	private PhotonView myPhotonView;
 
 	void Start() {
@@ -116,7 +117,9 @@ public class NetworkManager : MonoBehaviour {
 	// Script to spawn player.
 	private void SpawnPlayer() {
 		Debug.Log("Spawning player!");
-		PhotonNetwork.Instantiate("playerPrefab", Vector3.zero, Quaternion.identity, 0);
+		Vector3 spawnlocation = new Vector3(9.9f, 5.2f, 0f);
+		PhotonNetwork.Instantiate("playerPrefab", spawnlocation, Quaternion.identity, 0);
+		Instantiate(worldPrefab, Vector3.zero, Quaternion.identity);
 		// playerPrefab.GetComponent<myThirdPersonController>().isControllable = true;
 		// playerPrefab.GetComponent<PhotonView>();
 	}

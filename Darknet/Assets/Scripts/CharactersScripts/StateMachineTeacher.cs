@@ -6,7 +6,7 @@ public abstract class CBaseState {
 	// Pure virtual function
 	public abstract CBaseState GetNextState();
 	// print the string
-	public abstract string  ToString();
+	public abstract string ToString();
 	public abstract string message();	
 }
 	

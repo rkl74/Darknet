@@ -236,8 +236,6 @@
      <Compile Include="Assets\Scripts\ItemsScripts\SwordRegular.cs" />
      <Compile Include="Assets\Scripts\ItemsScripts\SwordRegularUpgraded.cs" />
      <Compile Include="Assets\Scripts\ItemsScripts\SwordWood.cs" />
-     <Compile Include="Assets\Scripts\Lobby.cs" />
-     <Compile Include="Assets\Scripts\LoginView.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\PlayFabLoginDN.cs" />
